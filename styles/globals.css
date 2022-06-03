@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+:root {
+  --color-type-normal: #9E9E6D;
+  --color-type-fighting: #B82A24;
+  --color-type-flying: #9E85EE;
+  --color-type-poison: #963896;
+  --color-type-ground: #DCB85D;
+  --color-type-rock: #AF9631;
+  --color-type-bug: #9EAF1D;
+  --color-type-ghost: #654E8D;
+  --color-type-steel: #AFAFCA;
+  --color-type-fire: #EE752A;
+  --color-type-water: #5D85EE;
+  --color-type-grass: #6DC146;
+  --color-type-electric: #F7CA2A;
+  --color-type-psychic: #F74E7D;
+  --color-type-ice: #8DD3D3;
+  --color-type-dragon: #6531F7;
+  --color-type-dark: #654E3F;
+  --color-type-fairy: #EB8EA2;
+  --color-type-unknown: #f4f4f4;
+  --color-type-shadow: #8C81A4;
+}
+
+html,
+body {
+  background-color: #f4f4f4;
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  height: 100%;
+}
+
+#__next {
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
