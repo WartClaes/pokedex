@@ -25,4 +25,4 @@ yarn dev # run the code
 ## Resources
 
 - [figma designs](https://www.figma.com/file/CmDy6LO2KB1dDxPHxMFGFx/Pokedex)
-- (API docs)[https://pokeapi.co/]
+- [API docs](https://pokeapi.co/)
