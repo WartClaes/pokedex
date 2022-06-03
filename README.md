@@ -16,9 +16,9 @@ Welcome to the PokeDex!
 
 ## Getting started
 
-```
-$ yarn # install dependencies
-$ yarn dev # run the code
+```bash
+yarn # install dependencies
+yarn dev # run the code
 ```
 
 
