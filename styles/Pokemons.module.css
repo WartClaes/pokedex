@@ -1,0 +1,56 @@
+.container {
+    margin: 0 auto;
+    text-align: center;
+    width: 740px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 42px;
+    padding-left: 80px;
+}
+
+.detailSection {
+    display: flex;
+    padding-top: 53px;
+}
+
+.btnSection {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+    width: 200px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #444444;
+    cursor: pointer;
+}
+
+.image {
+    display: flex;
+    width: 96px;
+    height: 96px;
+}
+
+.primaryDetails {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    padding-top: 48px;
+}
