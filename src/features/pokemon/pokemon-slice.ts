@@ -1,20 +1,22 @@
 import type { PayloadAction } from '@reduxjs/toolkit';
 
-import type { Pokemons } from './pokemon-types';
+import type { PokemonDetails, Pokemons } from './pokemon-types';
 
 import { createSlice } from '@reduxjs/toolkit';
 import { HYDRATE } from 'next-redux-wrapper';
 
 import type { RootState } from '../../store';
 
-import { getPokemons } from './pokemon-api';
+import { getPokemonDetails, getPokemons } from './pokemon-api';
 
 type InitialState = {
   pokemonslist: Pokemons | null;
+  pokemonDetails: PokemonDetails | null;
 }
 
 const initialState: InitialState = {
   pokemonslist: null,
+  pokemonDetails: null
 };
 
 export const pokemonSlice = createSlice({
@@ -31,6 +33,13 @@ export const pokemonSlice = createSlice({
       getPokemons.matchFulfilled,
       (state, action) => {
         state.pokemonslist = action.payload;
+      },
+    );
+
+    builder.addMatcher(
+      getPokemonDetails.matchFulfilled,
+      (state, action) => {
+        state.pokemonDetails = action.payload;
       },
     );
   },

@@ -1,0 +1,32 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    height: 90px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.statName {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    padding: 10px 17px 5px 18px;
+    color: #444444;
+}
+
+.statValue {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 10px 10px 10px;
+    color: #444444;
+}
