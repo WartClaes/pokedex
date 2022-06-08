@@ -2,6 +2,7 @@ import type { Pokemons } from '../../src/features/pokemon';
 
 import { useState } from 'react';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 import { wrapper } from '../../src/store';
 import { getPokemons } from '../../src/features/pokemon';
@@ -18,6 +19,7 @@ type PokemonsProps = {
 export default function Pokemons({ initialPokemons }: PokemonsProps) {
   const [offset, setOffset] = useState(0);
   const limit = 20;
+  const router = useRouter();
 
   const { data, isFetching } = usePokemons(initialPokemons, { limit, offset });
 
@@ -51,7 +53,7 @@ export default function Pokemons({ initialPokemons }: PokemonsProps) {
             key={getPokemonNumber(index)}
             name={name}
             number={getPokemonNumber(index)}
-            onClick={() => console.log('go to detail')}
+            onClick={() => router.push(`/pokemons/${getPokemonNumber(index)}`)}
           />
         ))}
       </div>

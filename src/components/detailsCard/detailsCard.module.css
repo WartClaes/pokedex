@@ -1,0 +1,22 @@
+.detail {
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 57px;
+    color: #FFFFFF;
+}
